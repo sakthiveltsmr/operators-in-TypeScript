@@ -41,9 +41,21 @@
 // console.log(p.lastname);
 // console.log(p.fullname);
 // console.log(p.isSenior());
-//Array destructuring
-var employe = ["sakthi", "vel", "sakthivel"];
-var firstname = employe[0], lastname = employe[1], fullname = employe[2];
-console.log(firstname);
-console.log(lastname);
-console.log(fullname);
+// //Array destructuring
+// let employe = ["sakthi", "vel", "sakthivel"];
+// //let [firstname, lastname, fullname] = employe;
+// //OR
+// let [firstname1, lastname1, fullname = "sadheesh"] = employe;
+// //OR
+// //  let [, , fullname] = employe;
+// console.log(firstname1);
+// console.log(lastname1);
+// console.log(fullname);
+//object Destructuring
+var newobject = {
+    fname: "sakthi",
+    lname: "vel"
+};
+var f = newobject.fname, l = newobject.lname;
+console.log(f);
+console.log(l);
