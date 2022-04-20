@@ -1,37 +1,43 @@
-//Rest Operator
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
+// //Rest Operator
+// let displayColors = function (message, ...colors) {
+//   console.log(message);
+//   console.log(colors);
+//   for (let i in colors) {
+//     console.log(colors[i]);
+//   }
+// };
+// let message = "list of colors";
+// // let colors = ["red", "green", "blue"];
+// displayColors(message, "red", "green", "blue");
+// //spread operator
+// let displayspreed = function (message, ...colors1) {
+//   console.log(message);
+//   for (let j in colors1) {
+//     console.log(colors1[j]);
+//   }
+// };
+// let colors1 = ["yellow", "orange", "white"];
+// displayspreed(message, ...colors1);
+//object literals
+var firstname = "sakthi";
+var lastname = "vel";
+var person = {
+    firstname: firstname,
+    lastname: lastname
+};
+var displayperson = function (firstname, lastname, age) {
+    var fullname = firstname + "" + lastname;
+    return {
+        firstname: firstname,
+        lastname: lastname,
+        fullname: fullname,
+        isSenior: function () {
+            return age > 50;
         }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
+    };
 };
-var displayColors = function (message) {
-    var colors = [];
-    for (var _i = 1; _i < arguments.length; _i++) {
-        colors[_i - 1] = arguments[_i];
-    }
-    console.log(message);
-    console.log(colors);
-    for (var i in colors) {
-        console.log(colors[i]);
-    }
-};
-var message = "list of colors";
-// let colors = ["red", "green", "blue"];
-displayColors(message, "red", "green", "blue");
-//spread operator
-var displayspreed = function (message) {
-    var colors1 = [];
-    for (var _i = 1; _i < arguments.length; _i++) {
-        colors1[_i - 1] = arguments[_i];
-    }
-    console.log(message);
-    for (var j in colors1) {
-        console.log(colors1[j]);
-    }
-};
-var colors1 = ["yellow", "orange", "white"];
-displayspreed.apply(void 0, __spreadArray([message], colors1, false));
+var p = displayperson("sakthi", "vel", 23);
+console.log(p.firstname);
+console.log(p.lastname);
+console.log(p.fullname);
+console.log(p.isSenior());

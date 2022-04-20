@@ -28,3 +28,32 @@ let displayspreed = function (message, ...colors1) {
 let colors1 = ["yellow", "orange", "white"];
 
 displayspreed(message, ...colors1);
+
+//object literals
+
+let firstname = "sakthi";
+let lastname = "vel";
+
+let person = {
+  firstname,
+  lastname,
+};
+
+let displayperson = (firstname, lastname, age) => {
+  let fullname = firstname + "" + lastname;
+  return {
+    firstname,
+    lastname,
+    fullname,
+    isSenior() {
+      return age > 50;
+    },
+  };
+};
+
+let p = displayperson("sakthi", "vel", 23);
+
+console.log(p.firstname);
+console.log(p.lastname);
+console.log(p.fullname);
+console.log(p.isSenior());
