@@ -105,9 +105,9 @@ for (let friend of friends) {
 
 let names = "sakthi";
 
-for (let ind in names) {
-  console.log(names[ind]);
-}
+// for (let ind in names) {
+//   console.log(names[ind]);
+// }
 
 for (let strs of names) {
   console.log(strs);
