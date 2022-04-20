@@ -59,6 +59,11 @@
 // let { fname: f, lname: l } = newobject;
 // console.log(f);
 // console.log(l);
-//string templet
-var developer = "sakthi";
-console.log("hi this is".concat(developer));
+// // string templet
+// let developer = "sakthi";
+// console.log(`hi this is${developer}`);
+// //for loop
+var friends = ["sakthi", "muthu", "thiru", "sadheesh"];
+for (var index in friends) {
+    console.log(friends[index]);
+}

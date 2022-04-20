@@ -1,90 +1,98 @@
-//Rest Operator
+// //Rest Operator
 
-let displayColors = function (message, ...colors) {
-  console.log(message);
+// let displayColors = function (message, ...colors) {
+//   console.log(message);
 
-  console.log(colors);
+//   console.log(colors);
 
-  for (let i in colors) {
-    console.log(colors[i]);
-  }
-};
+//   for (let i in colors) {
+//     console.log(colors[i]);
+//   }
+// };
 
-let message = "list of colors";
+// let message = "list of colors";
 
-// let colors = ["red", "green", "blue"];
+// // let colors = ["red", "green", "blue"];
 
-displayColors(message, "red", "green", "blue");
+// displayColors(message, "red", "green", "blue");
 
-//spread operator
+// //spread operator
 
-let displayspreed = function (message, ...colors1) {
-  console.log(message);
-  for (let j in colors1) {
-    console.log(colors1[j]);
-  }
-};
+// let displayspreed = function (message, ...colors1) {
+//   console.log(message);
+//   for (let j in colors1) {
+//     console.log(colors1[j]);
+//   }
+// };
 
-let colors1 = ["yellow", "orange", "white"];
+// let colors1 = ["yellow", "orange", "white"];
 
-displayspreed(message, ...colors1);
+// displayspreed(message, ...colors1);
 
-//object literals
+// //object literals
 
-let firstname = "sakthi";
-let lastname = "vel";
+// let firstname = "sakthi";
+// let lastname = "vel";
 
-let person = {
-  firstname,
-  lastname,
-};
+// let person = {
+//   firstname,
+//   lastname,
+// };
 
-let displayperson = (firstname, lastname, age) => {
-  let fullname = firstname + "" + lastname;
-  return {
-    firstname,
-    lastname,
-    fullname,
-    isSenior() {
-      return age > 50;
-    },
-  };
-};
+// let displayperson = (firstname, lastname, age) => {
+//   let fullname = firstname + "" + lastname;
+//   return {
+//     firstname,
+//     lastname,
+//     fullname,
+//     isSenior() {
+//       return age > 50;
+//     },
+//   };
+// };
 
-let p = displayperson("sakthi", "vel", 23);
+// let p = displayperson("sakthi", "vel", 23);
 
-console.log(p.firstname);
-console.log(p.lastname);
-console.log(p.fullname);
-console.log(p.isSenior());
+// console.log(p.firstname);
+// console.log(p.lastname);
+// console.log(p.fullname);
+// console.log(p.isSenior());
 
-//Array destructuring
+// //Array destructuring
 
-let employe = ["sakthi", "vel", "sakthivel"];
+// let employe = ["sakthi", "vel", "sakthivel"];
 
-//let [firstname, lastname, fullname] = employe;
-//OR
-let [firstname1, lastname1, fullname = "sadheesh"] = employe;
-//OR
-//  let [, , fullname] = employe;
-console.log(firstname1);
-console.log(lastname1);
-console.log(fullname);
+// //let [firstname, lastname, fullname] = employe;
+// //OR
+// let [firstname1, lastname1, fullname = "sadheesh"] = employe;
+// //OR
+// //  let [, , fullname] = employe;
+// console.log(firstname1);
+// console.log(lastname1);
+// console.log(fullname);
 
-//object Destructuring
+// //object Destructuring
 
-let newobject = {
-  fname: "sakthi",
-  lname: "vel",
-};
+// let newobject = {
+//   fname: "sakthi",
+//   lname: "vel",
+// };
 
-let { fname: f, lname: l } = newobject;
+// let { fname: f, lname: l } = newobject;
 
-console.log(f);
-console.log(l);
+// console.log(f);
+// console.log(l);
 
-// string templet
+// // string templet
 
-let developer = "sakthi";
+// let developer = "sakthi";
 
-console.log(`hi this is${developer}`);
+// console.log(`hi this is${developer}`);
+
+// //for loop
+
+let friends = ["sakthi", "muthu", "thiru", "sadheesh"];
+
+for (let index in friends) {
+  console.log(friends[index]);
+}
