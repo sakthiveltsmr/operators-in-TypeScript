@@ -51,11 +51,14 @@
 // console.log(firstname1);
 // console.log(lastname1);
 // console.log(fullname);
-//object Destructuring
-var newobject = {
-    fname: "sakthi",
-    lname: "vel"
-};
-var f = newobject.fname, l = newobject.lname;
-console.log(f);
-console.log(l);
+// //object Destructuring
+// let newobject = {
+//   fname: "sakthi",
+//   lname: "vel",
+// };
+// let { fname: f, lname: l } = newobject;
+// console.log(f);
+// console.log(l);
+//string templet
+var developer = "sakthi";
+console.log("hi this is".concat(developer));
