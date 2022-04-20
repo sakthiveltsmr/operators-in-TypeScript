@@ -1,3 +1,5 @@
+//Rest Operator
+
 let displayColors = function (message, ...colors) {
   console.log(message);
 
