@@ -18,26 +18,32 @@
 // };
 // let colors1 = ["yellow", "orange", "white"];
 // displayspreed(message, ...colors1);
-//object literals
-var firstname = "sakthi";
-var lastname = "vel";
-var person = {
-    firstname: firstname,
-    lastname: lastname
-};
-var displayperson = function (firstname, lastname, age) {
-    var fullname = firstname + "" + lastname;
-    return {
-        firstname: firstname,
-        lastname: lastname,
-        fullname: fullname,
-        isSenior: function () {
-            return age > 50;
-        }
-    };
-};
-var p = displayperson("sakthi", "vel", 23);
-console.log(p.firstname);
-console.log(p.lastname);
-console.log(p.fullname);
-console.log(p.isSenior());
+// //object literals
+// let firstname = "sakthi";
+// let lastname = "vel";
+// let person = {
+//   firstname,
+//   lastname,
+// };
+// let displayperson = (firstname, lastname, age) => {
+//   let fullname = firstname + "" + lastname;
+//   return {
+//     firstname,
+//     lastname,
+//     fullname,
+//     isSenior() {
+//       return age > 50;
+//     },
+//   };
+// };
+// let p = displayperson("sakthi", "vel", 23);
+// console.log(p.firstname);
+// console.log(p.lastname);
+// console.log(p.fullname);
+// console.log(p.isSenior());
+//Array destructuring
+var employe = ["sakthi", "vel", "sakthivel"];
+var firstname = employe[0], lastname = employe[1], fullname = employe[2];
+console.log(firstname);
+console.log(lastname);
+console.log(fullname);

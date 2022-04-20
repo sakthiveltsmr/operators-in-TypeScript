@@ -63,3 +63,6 @@
 let employe = ["sakthi", "vel", "sakthivel"];
 
 let [firstname, lastname, fullname] = employe;
+console.log(firstname);
+console.log(lastname);
+console.log(fullname);
