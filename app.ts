@@ -89,7 +89,7 @@ let developer = "sakthi";
 
 console.log(`hi this is${developer}`);
 
-//for loop
+//for loop in array
 
 let friends = ["sakthi", "muthu", "thiru", "sadheesh"];
 
@@ -97,4 +97,18 @@ for (let index in friends) {
   console.log(friends[index]);
 }
 
-//
+for (let friend of friends) {
+  console.log(friend);
+}
+
+//for loop in string
+
+let names = "sakthi";
+
+for (let ind in names) {
+  console.log(names[ind]);
+}
+
+for (let strs of names) {
+  console.log(strs);
+}
